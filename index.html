@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
+    <main>
     <form action="" id="form">
-        <h1></h1>
+        <h1>Sign In With</h1>
         <div class="socialMedia">
-            <button id="facebook"></button>
-            <button id="google"></button>
+            <button id="facebook"> <img src="/assets/images/facebook.png" alt="">Facebook</button>
+            <button id="google"> <img src="/assets/images/google.png" alt="">Google</button>
         </div>
+        <div class="label-area">
         <label for="user">
-            <input id="user" type="text">
+            Username
+            <input id="user" type="text" onclick="clickInput0(event)">
         </label>
         <label for="password">
-            password <a href="">Forgot?</a>
-            <input id="password" type="password">
+            Password <a href="">Forgot?</a>
+            <input id="password" type="password" onclick="clickInput1(event)">
         </label>
+        </div>
         <button id="sign-in">Sign In</button>
-        <p>Not a member <a href="">Sign up now</a></p>
-
+        <p>Not a member? <a href="">Sign up now</a></p>
     </form>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
