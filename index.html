@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
-<body>
+<body id="body">
     <main>
     <form action="" id="form">
         <h1>Sign In With</h1>
@@ -23,14 +23,15 @@
         <div class="label-area">
         <label for="user">
             Username
-            <input id="user" type="text" onclick="clickInput0(event)">
+            <input id="user" type="email">
         </label>
         <label for="password">
             Password <a href="">Forgot?</a>
-            <input id="password" type="password" onclick="clickInput1(event)">
+            <input id="password" type="password" >
         </label>
         </div>
-        <button id="sign-in">Sign In</button>
+        <button  id="sign-in" onclick="validate()">Sign In</button>
+        <div id="validar"></div>
         <p>Not a member? <a href="">Sign up now</a></p>
     </form>
     </main>

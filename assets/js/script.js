@@ -1,22 +1,27 @@
 
-let inputs = document.querySelectorAll('input')
+ function validate(){
+    //validar email
+    const emailInput = document.querySelector("#user")
+    const emailPattern = /^\S+@\S+.\S+$/ // pattern dos caracteres do email
+    const isValidEmail = emailPattern.test(emailInput.value)//validador do email
 
- function clickInput0(e){
-    switch(e.target){
-        case e.target:
-            inputs[0].style.border = '1px solid #d522fa'
-            break;
-            case e.target = window:
-                inputs[0].style.border = '10px solid #df1'
-    }
- }
+    //validar senha
+    const passwordInput = document.querySelector("#password")
+    const password = passwordInput.value //valor do input
+    const hasUpperCase = /[A-Z]/.test(password) // uma letra maiuscula 
+    const hasLoweCase = /[a-z]/.test(password) //uma letra minuscula
+    const hasNumber = /[0-9]/.test(password) // um numero
+    const isValidPassword = hasUpperCase && hasLoweCase && hasNumber && password.length > 3; //validador da senha
 
- function clickInput1(e){
-    switch(e.target){
-        case e.target:
-            inputs[1].style.border = '1px solid #d522fa'
-            break;
-            case e.target = window:
-                inputs[1].style.border = '10px solid #df1'
+    const errorMessage = document.querySelector('#validar')
+    
+    //mensagens geradas pro email ou senha
+    if(!isValidEmail){
+        errorMessage.innerHTML = "Insira o email corretamente"
+    }else if(!isValidPassword){
+        errorMessage.innerHTML = "Insira a senha corretamente"
+    }else{
+        alert("Tudo correto")
     }
+    event.preventDefault()
  }

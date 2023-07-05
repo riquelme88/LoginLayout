@@ -2,18 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
-body{
+main{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
+    align-items: center ;
+    min-height: 100vh;
     background-image: url(/assets/images/bg-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 form{
     background-color: white;
     border-radius: 10px;
@@ -110,6 +108,10 @@ h1{
     transition: all 0.5s ease-out;
 }
 
+.label-area input:focus{
+    border: 1px solid #d522fa
+}
+
 label{
     margin-top: 15px;
     font-size: 16px;
@@ -165,4 +167,10 @@ a{
 }
 a:hover{
     color: #d522fa;
+}
+
+#validar{
+    margin-top: 530px;
+    position: absolute;
+    color: red;
 }
