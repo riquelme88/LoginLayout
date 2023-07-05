@@ -11,6 +11,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 10px 0px;
 }
 form{
     background-color: white;
@@ -174,3 +175,130 @@ a:hover{
     position: absolute;
     color: red;
 }
+
+@media screen and (max-width: 778px) {
+    form{
+        padding: 30px 60px;
+    }
+
+    .socialMedia button{
+        width: 270px;
+    }
+
+    #facebook, #google{
+        padding-right: 75px;
+    }
+
+    .label-area input{
+        width: 545px;
+    }
+
+    #sign-in{
+        width: 570px;
+        padding: 25px;
+        margin-top: 35px;
+    }
+}
+
+#validar{
+    margin-top: 550px;
+}
+
+@media screen and (max-width: 426px) {
+    form{
+       padding: 20px 12px;
+      
+    }
+    .socialMedia{
+        flex-direction: column;
+        display: flex;
+        width: 370px;
+        
+    }
+
+    #facebook {
+       width: 100%;
+       margin-bottom: 20px;
+       padding-right: 120px;
+    }
+
+    #google{
+        width: 100%;
+        padding-right: 130px;
+    }
+
+    .label-area input{
+        width: 355px
+    }
+
+    #sign-in{
+        width: 380px;
+       
+    }
+}
+
+@media screen and (max-width: 375px) {
+    form{
+        padding: 20px 12px;
+       
+     }
+     .socialMedia{
+         flex-direction: column;
+         display: flex;
+         width: 330px;
+         
+     }
+ 
+     #facebook {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 100px;
+     }
+ 
+     #google{
+         width: 100%;
+         padding-right: 115px;
+     }
+ 
+     .label-area input{
+         width: 300px
+     }
+ 
+     #sign-in{
+         width: 320px;
+        
+     }
+ }
+
+ @media screen and (max-width: 325px) {
+    form{
+        padding: 20px 12px;
+       
+     }
+     .socialMedia{
+         flex-direction: column;
+         display: flex;
+         width: 275px;
+         
+     }
+ 
+     #facebook {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 68px;
+     }
+ 
+     #google{
+         width: 100%;
+         padding-right: 90px;
+     }
+ 
+     .label-area input{
+         width: 245px
+     }
+ 
+     #sign-in{
+         width: 265px;
+        
+     }
+ }
