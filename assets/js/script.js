@@ -19,7 +19,7 @@
     if(!isValidEmail){
         errorMessage.innerHTML = "Insira o email corretamente"
     }else if(!isValidPassword){
-        errorMessage.innerHTML = "Insira a senha corretamente"
+        errorMessage.innerHTML = "A senha deve conter no minímo: Letra maiúscula, letra minúscula, Número. "
     }else{
         alert("Tudo correto")
     }
